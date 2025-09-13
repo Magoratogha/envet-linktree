@@ -1,0 +1,18 @@
+.btn-primary {
+  --bs-btn-bg: #b0897a;
+  --bs-btn-border-color: #b0897a;
+  --bs-btn-hover-bg: #7c5f54;
+  --bs-btn-hover-border-color: #7c5f54;
+  --bs-btn-active-bg: #59453d;
+  --bs-btn-active-border-color: #59453d;
+  --bs-btn-disabled-bg: #b0897a;
+  --bs-btn-disabled-border-color: #b0897a;
+}
+
+body {
+  background-color: #eeccbe;
+  background-image: url(../public/images/envet-logo-outline.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
