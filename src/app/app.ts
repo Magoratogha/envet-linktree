@@ -28,12 +28,12 @@ const DEFAULT_CONFIG: Config = {
       url: 'wa.me/573007615952',
     },
     {
-      icon: 'instagram',
+      icon: 'file-earmark-richtext',
       label: 'Nuestro portafolio',
       url: 'drive.google.com/file/d/1oI5zeF3WA4Y-ojx2TqvZJ7GFbxPiQ1oV/view?fbclid=PAZnRzaAMxpERleHRuA2FlbQIxMQABp17V5ib2Sze8DoasXYGEif5QDksS8IO7nSxK63dFzF5IsBCwXvZKhjQ_VCzT_aem_aXE2lafYoKXOK7STnatT1w',
     },
     {
-      icon: 'file-earmark',
+      icon: 'instagram',
       label: 'Más de lo que hacemos',
       url: 'www.instagram.com/saracatnela',
     }
