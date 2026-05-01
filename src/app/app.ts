@@ -84,14 +84,9 @@ export class App implements OnInit {
   }
 
   private _getParsedUrl(url: string): string {
-    if (!this._isInApp) {
-      return 'https://' + url;
+    if (this._isInApp && this._currentOS === OS.ANDROID) {
+      return 'intent://' + url + '#Intent;scheme=https;end';
     }
-
-    if (this._currentOS === OS.IOS) {
-      return 'x-safari-https://' + url;
-    }
-
-    return 'intent://' + url + '#Intent;scheme=https;end';
+    return 'https://' + url;
   }
 }
