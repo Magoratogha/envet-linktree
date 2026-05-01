@@ -23,17 +23,17 @@ const DEFAULT_CONFIG: Config = {
   title: 'Servicios de enfermería veterinaria en casa',
   links: [
     {
-      icon: 'assets/instagram.png',
+      icon: 'whatsapp',
       label: 'Agenda tu cita',
       url: 'wa.me/573007615952',
     },
     {
-      icon: 'assets/instagram.png',
+      icon: 'instagram',
       label: 'Nuestro portafolio',
       url: 'drive.google.com/file/d/1oI5zeF3WA4Y-ojx2TqvZJ7GFbxPiQ1oV/view?fbclid=PAZnRzaAMxpERleHRuA2FlbQIxMQABp17V5ib2Sze8DoasXYGEif5QDksS8IO7nSxK63dFzF5IsBCwXvZKhjQ_VCzT_aem_aXE2lafYoKXOK7STnatT1w',
     },
     {
-      icon: 'assets/instagram.png',
+      icon: 'file-earmark',
       label: 'Más de lo que hacemos',
       url: 'www.instagram.com/saracatnela',
     }
