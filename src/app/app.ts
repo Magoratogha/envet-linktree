@@ -69,10 +69,7 @@ export class App implements OnInit {
       url: this._getParsedUrl(link.url),
     }));
 
-    setTimeout(() => {
-      this.config.set(config);
-
-    }, 3000);
+    this.config.set(config);
   }
 
   private getCurrentOS(): OS {
