@@ -38,7 +38,10 @@
             "outputPath": {
               "base": "dist",
               "browser": ""
-            }
+            },
+            "allowedCommonJsDependencies": [
+              "bowser"
+            ]
           },
           "configurations": {
             "production": {

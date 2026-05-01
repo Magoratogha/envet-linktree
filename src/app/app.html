@@ -1,23 +1,29 @@
-<div class="header-container">
-  <div class="logo-wrapper">
-    <img src="images/envet-logo.svg" width="130" class="img-fluid" />
+@if (!config()) {
+  <div class="loader-container">
+    <span class="loader"></span>
   </div>
-  <div class="d-flex flex-column align-items-center">
-    <h1 class="display-6 text-center">{{ config()?.title }}</h1>
-    @if (config()?.subtitle) {
-      <h5 class="fw-light text-center mt-2">{{ config()?.subtitle }}</h5>
+} @else {
+  <div animate.enter="fade-in" class="header-container">
+    <div class="logo-wrapper">
+      <img src="images/envet-logo.svg" width="120" class="img-fluid" />
+    </div>
+    <div class="d-flex flex-column align-items-center">
+      <h1 class="display-6 text-center">{{ config()?.title }}</h1>
+      @if (config()?.subtitle) {
+        <h5 class="fw-light text-center mt-3">{{ config()?.subtitle }}</h5>
+      }
+    </div>
+  </div>
+  <div animate.enter="fade-in-later" class="buttons-container mx-4">
+    @for (link of config()?.links; track link.label) {
+      <a
+        class="btn btn-primary w-100"
+        role="button"
+        [href]="link.url"
+        target="_blank"
+      >
+        <i [class]="'bi bi-' + link.icon + ' me-2'"></i>{{ link.label }}
+      </a>
     }
   </div>
-</div>
-<div class="buttons-container mx-4">
-  @for (link of config()?.links; track link.label) {
-    <a
-      class="btn btn-primary w-100"
-      role="button"
-      [href]="link.url"
-      target="_blank"
-    >
-      <i [class]="'bi bi-' + link.icon + ' me-2'"></i>{{ link.label }}
-    </a>
-  }
-</div>
+}
