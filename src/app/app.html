@@ -16,12 +16,14 @@
   </div>
   <div animate.enter="fade-in-later" class="buttons-container mx-4">
     @for (link of config()?.links; track link.label) {
-      <button
+      <a
         class="btn btn-primary w-100"
-        (click)="openLink(link.url)"
+        role="button"
+        [href]="link.url"
+        target="_blank"
       >
         <i [class]="'bi bi-' + link.icon + ' me-2'"></i>{{ link.label }}
-      </button>
+      </a>
     }
   </div>
 }
