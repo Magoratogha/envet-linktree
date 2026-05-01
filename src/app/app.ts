@@ -72,6 +72,10 @@ export class App implements OnInit {
     this.config.set(config);
   }
 
+  openLink(url: string): void {
+    window.open(url, "_blank");
+  }
+
   private getCurrentOS(): OS {
     if (this._browser.getPlatformType(true) === 'desktop') {
       return OS.DESKTOP;
